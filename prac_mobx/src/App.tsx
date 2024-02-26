@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { inject, observer } from 'mobx-react';
 
@@ -14,7 +13,7 @@ export default class App extends React.Component<any> {
       <div>
         <div>value = {this.props.yourstore.yourStore}</div>
         <div>
-          <button onClick={this.props.yourstore.changeToWorld}>
+          <button onClick={() => this.props.yourstore.changeToWorld()}>
             Change to world
           </button>
         </div>
