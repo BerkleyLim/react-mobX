@@ -6,6 +6,8 @@ interface TodoType {
   finished: boolean;
 }
 
+// 참조
+//https://ko.mobx.js.org/the-gist-of-mobx.html
 export class TodoList {
   todos : TodoType[] = []
 
